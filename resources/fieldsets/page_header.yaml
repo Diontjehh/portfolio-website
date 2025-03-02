@@ -1,0 +1,23 @@
+title: 'Page header'
+fields:
+  -
+    handle: header_type
+    field:
+      type: select
+      display: 'Header type'
+  -
+    handle: header_title
+    field:
+      type: text
+      display: Titel
+  -
+    handle: header_subtitle
+    field:
+      type: text
+      display: Subtitel
+  -
+    handle: header_image
+    field:
+      container: assets
+      type: assets
+      display: Afbeelding

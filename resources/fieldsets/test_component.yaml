@@ -1,0 +1,19 @@
+title: test_component
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Titel
+  -
+    handle: text
+    field:
+      type: textarea
+      display: Tekst
+  -
+    handle: image
+    field:
+      container: assets
+      type: assets
+      display: Afbeelding
+      max_files: 1
