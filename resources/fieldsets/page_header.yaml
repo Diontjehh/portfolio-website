@@ -6,18 +6,48 @@ fields:
       type: select
       display: 'Header type'
   -
+    handle: header_avatar
+    field:
+      container: assets
+      type: assets
+      display: Avatar
+      max_files: 1
+  -
+    handle: header_name
+    field:
+      type: text
+      display: Naam
+  -
     handle: header_title
     field:
       type: text
       display: Titel
   -
-    handle: header_subtitle
+    handle: header_description
     field:
       type: text
-      display: Subtitel
+      display: Beschrijving
   -
-    handle: header_image
+    handle: header_buttons
     field:
-      container: assets
-      type: assets
-      display: Afbeelding
+      type: replicator
+      display: Knoppen
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            buttons:
+              display: buttons
+              fields:
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - pages
+                    type: link
+                    display: Link
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: TItel
