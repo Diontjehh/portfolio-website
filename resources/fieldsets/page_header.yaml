@@ -28,26 +28,26 @@ fields:
       type: text
       display: Beschrijving
   -
-    handle: header_buttons
+    handle: cta_1_link
     field:
-      type: replicator
-      display: Knoppen
-      sets:
-        new_set_group:
-          display: 'New Set Group'
-          sets:
-            buttons:
-              display: buttons
-              fields:
-                -
-                  handle: link
-                  field:
-                    collections:
-                      - pages
-                    type: link
-                    display: Link
-                -
-                  handle: title
-                  field:
-                    type: text
-                    display: TItel
+      type: link
+      display: 'Cta 1 link'
+      width: 66
+  -
+    handle: cta_1_text
+    field:
+      type: text
+      display: 'Cta 1 tekst'
+      width: 33
+  -
+    handle: cta_2_link
+    field:
+      type: link
+      display: 'Cta 2 link'
+      width: 66
+  -
+    handle: cta_2_text
+    field:
+      type: text
+      display: 'Cta 2 tekst'
+      width: 33

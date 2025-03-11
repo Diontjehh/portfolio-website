@@ -1,4 +1,4 @@
-<div class="flex items-center justify-center min-h-[70vh] pt-16">
+<div class="flex items-center justify-center min-h-[60vh] pt-16">
     <div class="text-center max-w-2xl">
         <div class="flex justify-center">
             @if ($page->header_image)
@@ -6,7 +6,7 @@
             @endif
         </div>
 
-        <h3 class="text-lg font-bold mt-6">
+        <h3 class="text-lg font-BebasNeue font-bold mt-6">
             {{ $page->header_name }}
         </h3>
 
@@ -14,16 +14,23 @@
             {{ $page->header_title }} <br>
         </h1>
 
-        <p class="text-gray-400 mt-4 text-lg max-w-lg mx-auto">
+        <p class="text-gray-400 mt-4 font-OpenSans text-lg max-w-xl mx-auto">
             {{ $page->header_description }}
         </p>        
 
-        <div class="mt-6 flex justify-center gap-4">
-            @foreach ($page->header_buttons as $button)
-                <a href="{{ $button->link }}" class="px-6 py-3 rounded-full font-semibold shadow-md">
-                    {{ $button->title }}
-                </a>
-            @endforeach
+        <div class="mt-6 flex justify-center gap-4 font-OpenSans">
+            @if ($page->cta_1_link)
+                <x-primary-button href="{{ $page->cta_1_link }}" wire:navigate>
+                    {{ $page->cta_1_text ?? '' }}
+                </x-primary-button>
+            @endif
+            @if ($page->cta_2_link)
+                <x-primary-button href="{{ $page->cta_2_link }}" wire:navigate>
+                    {{ $page->cta_2_text ?? '' }}
+                </x-primary-button>
+            @endif
         </div>
+
+        
     </div>
 </div>

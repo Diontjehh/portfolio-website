@@ -12,7 +12,10 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                // sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                AdventPro: ['"Advent Pro"', 'sans-serif'],
+                OpenSans: ['"Open Sans"', 'sans-serif'],
+                BebasNeue: ['"Bebas Neue"', 'sans-serif'],
             },
         },
     },

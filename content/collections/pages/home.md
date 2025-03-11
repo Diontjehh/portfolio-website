@@ -5,7 +5,7 @@ title: Home
 header_title: 'Ik ben een software Developer'
 header_subtitle: test
 updated_by: 1
-updated_at: 1741553720
+updated_at: 1741722837
 header_image: avatar.png
 header_name: 'Dion Boerrigter'
 header_description: 'Hier komt wat informatie over mijzelf dohaefiae fhe aifehius hf hishuif shiufhiusrhifrhsigshgiurshiguhrsiughsirhgishgisrhrgis gs ihrhgigihrsighs i'
@@ -32,4 +32,8 @@ dynamic_components:
     type: test
     enabled: true
 header_avatar: avatar.png
+cta_1_link: test
+cta_1_text: Contact
+cta_2_link: test
+cta_2_text: 'Bekijk mijn werk'
 ---
